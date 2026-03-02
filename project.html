@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - EL ASYELI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="batik-overlay min-h-screen">
+
+<!-- Navigasi Interaktif Terpadu -->
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-[#b31312] text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="window.open('portfolio-kelompok-1.jsx', '_self')">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-[#b31312] shadow-lg">
+                <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <div>
+                <span class="block font-bold text-white leading-none">EL ASYELI</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] text-white/80 font-extrabold">Informatika 2</span>
+            </div>
+        </div>
+
+        <!-- Navigasi Teks Interaktif -->
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="#" onclick="window.open('index.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Beranda</a>
+            <a href="#" onclick="window.open('about.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Tentang Kami</a>
+            <a href="#" onclick="window.open('project.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Project</a>
+            <a href="#" onclick="window.open('gallery.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Karya</a>
+            <a href="#" onclick="window.open('contact.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Contact Us</a>
+        </div>
+
+        <button onclick="window.open('portfolio-kelompok-1.jsx', '_self')" class="bg-white text-[#b31312] px-5 py-2 rounded-full text-xs font-bold sm:flex hidden items-center gap-2 hover:bg-gray-100 transition-colors">
+            <i data-lucide="arrow-left" class="w-3 h-3"></i> Home
+        </button>
+    </div>
+</nav>
+<body class="bg-slate-50">
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16 text-slate-900">Tugas & <span class="text-[#b31312]">Proyek</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
+                    <div class="w-16 h-16 bg-red-50 text-[#b31312] rounded-2xl flex items-center justify-center mb-6"><i data-lucide="layout"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Pengembangan Web</h3>
+                    <p class="text-slate-500 text-sm">Pembuatan website portofolio interaktif yang responsif.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
+                    <div class="w-16 h-16 bg-red-50 text-[#b31312] rounded-2xl flex items-center justify-center mb-6"><i data-lucide="code"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Logika Coding</h3>
+                    <p class="text-slate-500 text-sm">Eksperimen algoritma dan penyelesaian masalah komputasi.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
+                    <div class="w-16 h-16 bg-red-50 text-[#b31312] rounded-2xl flex items-center justify-center mb-6"><i data-lucide="palette"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Desain Digital</h3>
+                    <p class="text-slate-500 text-sm">Visualisasi konten kreatif untuk media informatika.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

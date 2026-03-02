@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EL ASYELI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="batik-overlay min-h-screen">
+
+<!-- Navigasi Interaktif Terpadu -->
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-[#b31312] text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="window.open('portfolio-kelompok-1.jsx', '_self')">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-[#b31312] shadow-lg">
+                <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <div>
+                <span class="block font-bold text-white leading-none">EL ASYELI</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] text-white/80 font-extrabold">Informatika 2</span>
+            </div>
+        </div>
+
+        <!-- Navigasi Teks Interaktif -->
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="#" onclick="window.open('index.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Beranda</a>
+            <a href="#" onclick="window.open('about.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Tentang Kami</a>
+            <a href="#" onclick="window.open('project.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Project</a>
+            <a href="#" onclick="window.open('gallery.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Karya</a>
+            <a href="#" onclick="window.open('contact.html', '_self')" class="text-sm font-bold text-white hover:text-lg hover:font-extrabold hover:underline underline-offset-4 transition-all duration-200">Contact Us</a>
+        </div>
+
+        <button onclick="window.open('portfolio-kelompok-1.jsx', '_self')" class="bg-white text-[#b31312] px-5 py-2 rounded-full text-xs font-bold sm:flex hidden items-center gap-2 hover:bg-gray-100 transition-colors">
+            <i data-lucide="arrow-left" class="w-3 h-3"></i> Home
+        </button>
+    </div>
+</nav>
+<body>
+    <section id="contact" class="py-20 bg-[#b31312] text-white min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center w-full">
+            <div>
+                <h2 class="text-5xl font-bold mb-8">Hubungi Kami</h2>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center"><i data-lucide="mail"></i></div>
+                        <div>
+                            <p class="text-xs opacity-60 font-bold uppercase">Email Tim</p>
+                            <p class="font-semibold">rasya.elvitto19@sma.belajar.id</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center"><i data-lucide="phone"></i></div>
+                        <div>
+                            <p class="text-xs opacity-60 font-bold uppercase">Telepon</p>
+                            <p class="font-semibold">+62 895-2557-5432</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl text-slate-800 shadow-2xl">
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Pesan Anda Terkirim!');">
+                    <input type="text" placeholder="Nama" class="w-full p-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-[#b31312]">
+                    <textarea placeholder="Pesan" class="w-full p-4 bg-slate-50 border border-slate-100 rounded-xl h-32 focus:outline-[#b31312]"></textarea>
+                    <button class="w-full bg-[#b31312] text-white py-4 rounded-xl font-bold shadow-lg hover:bg-red-700 transition-all">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
